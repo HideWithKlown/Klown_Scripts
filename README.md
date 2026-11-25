@@ -1,5 +1,5 @@
 # Klown_Scripts
-# 🐧 Klown_Scripts
+# Klown_Scripts
 
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-Administration-purple?logo=linux&logoColor=white" />
@@ -15,7 +15,7 @@ I'm building this repository as part of my journey into Linux administration, au
 
 ---
 
-## 📂 Repository Contents
+## Repository Contents
 
 | Script | Description |
 |---|---|
@@ -23,15 +23,15 @@ I'm building this repository as part of my journey into Linux administration, au
 
 *More scripts and projects will be added over time.*
 
-## 🛠️ Technologies
+## Technologies
 
-- 🐧 Linux
-- 💻 Bash Scripting
-- 🔧 Git & GitHub
-- ⚙️ Linux System Administration
-- 🤖 Automation
+- Linux
+-  Bash Scripting
+-  Git & GitHub
+-  Linux System Administration
+-  Automation
 
-## 📚 Skills I'm Developing
+##  Skills I'm Developing
 
 - User and group management
 - File permissions and ownership
@@ -41,7 +41,7 @@ I'm building this repository as part of my journey into Linux administration, au
 - Error handling and logging
 - Linux security and administration
 
-## 🚀 Getting Started
+##  Getting Started
 
 Clone the repository:
 
@@ -69,7 +69,7 @@ Run the script:
 
 > **Note:** Some scripts may require root privileges. Review the code before running scripts, especially when using `sudo`.
 
-## ⚠️ Disclaimer
+##  Disclaimer
 
 These scripts are created for educational purposes, personal projects, and testing in Linux environments.
 
@@ -78,7 +78,7 @@ These scripts are created for educational purposes, personal projects, and testi
 - Some scripts may modify system configurations, users, groups, or files.
 - Use root privileges only when necessary.
 
-## 📈 Continuous Learning
+##  Continuous Learning
 
 This repository is a work in progress. I will continue adding scripts, improving existing projects, and documenting what I learn along the way.
 
