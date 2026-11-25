@@ -1,5 +1,4 @@
 # Klown_Scripts
-# Klown_Scripts
 
 <p align="center">
   <img src="https://img.shields.io/badge/Linux-Administration-purple?logo=linux&logoColor=white" />
