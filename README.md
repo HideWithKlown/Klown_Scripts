@@ -84,7 +84,7 @@ This repository is a work in progress. I will continue adding scripts, improving
 ---
 
 <p align="center">
-  <b>Learn. Build. Automate. Troubleshoot. Repeat. 🚀</b>
+  <b>Learn. Build. Automate. Troubleshoot. Repeat.</b>
 </p>
 
 <p align="center">
