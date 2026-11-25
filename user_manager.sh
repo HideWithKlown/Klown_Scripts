@@ -825,23 +825,52 @@ show_last() {
         if have last; then last -n 20 2>&1; else echo "(last is not installed)"; fi
 }
 
+
 show_lastlog() {
-        echo "--- last login of each regular user (lastlog) ---"
+        echo "--- last login of each regular user ---"
+
         if have lastlog; then
                 lastlog -u "$UID_MIN-$((NOBODY_ID - 1))" 2>&1
+
+        elif have lastlog2; then
+                echo "(Using lastlog2 instead of lastlog)"
+                lastlog2 2>&1
+
         else
-                echo "(lastlog is not installed, newer systems use lastlog2)"
+                echo "(Neither lastlog nor lastlog2 is installed)"
+                echo "Install with: sudo apt install lastlog2 libpam-lastlog2"
         fi
 }
 
 show_failed() {
-        echo "--- last 20 failed logins (lastb) ---"
+        echo "--- last 10 failed login attempts ---"
+
         if have lastb; then
-                lastb -n 20 2>&1
+                lastb -n 10 2>&1
+
+        elif have lslogins; then
+                echo "(Using lslogins as an alternative to lastb)"
+                lslogins --failed --user-accs 2>&1 | tail -n 10
+
         else
-                echo "(lastb is not installed)"
+                echo "(No failed-login utility found)"
         fi
-        echo "Also try: journalctl -u ssh | grep 'Failed password'"
+
+        echo
+        echo "--- last 10 SSH failed login attempts ---"
+
+        if have journalctl; then
+                journalctl -u ssh --no-pager -n 100 2>/dev/null |
+                        grep -Ei 'failed password|invalid user' |
+                        tail -n 10
+
+                echo
+                echo "Note: SSH logs only show SSH authentication failures."
+        else
+                echo "(journalctl is not available)"
+        fi
+
+        echo
 }
 
 show_expiring() {
