@@ -19,6 +19,8 @@ I'm building this repository as part of my journey into Linux administration, au
 | Script | Description |
 |---|---|
 | `user_manager.sh` | Linux user and group management tool with options for creating, modifying, deleting, and auditing accounts. |
+| `diskmgr.sh` | Linux disk and storage management tool for inspecting disks, managing partitions, creating filesystems, configuring LVM and software RAID, handling mounts, and monitoring storage usage. |
+```DIL0
 
 *More scripts and projects will be added over time.*
 
